@@ -1,0 +1,186 @@
+@charset "UTF-8";
+html,body,div,ul,li,input,p,img{padding: 0;margin: 0;}
+body,html{
+	font-size: 62.5%!important;/*相当于size=10px*/
+	height: 100%;
+	width: 100%;
+	font-family: Georgia,Helvetica,Times New Roman, Cambria, Hoefler Text, Liberation Serif, Times,serif;
+	background:url("../images/header_img.jpg") no-repeat;
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+	-o-background-size:100% 100%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/header_img.jpg", sizingMethod='scale');
+}
+/*只有同时为html和body设置height: 100%时，这里的height才生效，并且随浏览器窗口变化始终保持和浏览器视窗等高*/
+.outer-wrap{
+	height: 100%;    
+	position: relative;
+}
+/*公司LOGO位置*/
+.header_logo{
+	position: absolute;
+	left:4%;
+	top:4%;
+}
+/*公司LOGO大小*/
+.header_logo img { 
+	width: 10rem;
+} 
+/*登陆面板*/
+.register-panel{
+	width: 40rem;
+	height: 38rem;
+    position: absolute;
+	top: 44%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.register-panel .panel{
+	display: block;
+	height: 38rem;
+	width: 40rem;
+	border-radius: 1.2rem;
+	background-color: rgba(202, 197, 197, 0.45);
+	z-index: 1;
+}
+/*登录框标题*/
+.register-panel ._title{
+	z-index: 10;
+	font-size: 2.4rem;
+	color: rgb(255, 253, 244);
+	margin: 1rem auto 1.5rem auto;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 0.4rem;
+}
+/*用户名输入栏*/
+.panel .name{
+    height: 3.5rem;
+    width: 30rem;
+	margin: 3rem 0rem 0rem 4rem;
+	padding-left: 1.5rem;
+	float: left;
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	border: none;
+	vertical-align:middle;
+}
+/*电话号码输入框*/
+.panel .box{
+    margin:0rem 0rem 0.5rem 4rem;	
+	border-radius: 0.5rem;
+	height: 3.5rem;
+	width: 31.5rem;
+	float: left;
+	border: none;
+	position: relative;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+/*电话号码输入栏*/
+.panel .phone{
+	border: none;	
+	padding-left: 1.5rem;
+	width: 20rem;
+	height: 3.5rem;
+	font-size: 1.5rem;
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+/*短信验证码获取*/
+.panel .box ._btn{
+	width: 10rem;
+    height: 3.5rem;
+	text-align: center;
+	font-size: 1.2rem;
+	position: absolute;
+	border: none;
+	color: rgb(248, 248, 248);
+	font-weight: 400;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+    background: linear-gradient(to bottom, #4eb5e5 0%,cornflowerblue 100%); 
+}
+/*密码及确认密码输入栏*/
+.panel .pwd_1{
+    height: 3.5rem;
+	width: 30rem;
+	margin-left: 4rem;
+	padding-left: 1.5rem;
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	border: none;	
+	float: left;
+}
+.panel .pwd_2{
+    height: 3.5rem;
+	width: 30rem;
+	margin-left: 4rem;
+	padding-left: 1.5rem;
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	border: none;	
+	float: left;
+}
+/*提交按钮*/
+.register-panel .submit{
+	display: block;
+    height: 3.5rem;
+	width: 31.5rem;
+    margin: 0rem 0rem 2rem 4rem;
+	cursor: pointer;
+	text-align: center;
+	font-size: 1.8rem;
+	background-color: cornflowerblue;
+	color:  cornsilk;
+	font-weight: 500;
+	border: none;
+	text-decoration: none;
+	border-radius: 0.5rem;
+	letter-spacing: 0.7rem;
+}
+.register-panel .submit:hover {
+	box-shadow: 0 1.2rem 1.6rem 0 rgba(0,0,0,0.24), 0 1.7rem 5rem 0 rgba(0,0,0,0.19);
+}
+
+.register-panel .submit:active {
+   box-shadow: 0 0.8rem 1.2rem 0 rgba(0,0,0,0.2), 0 0.6rem 1.6rem 0 rgba(0,0,0,0.19);
+   transform: translateY(0.4rem);
+}
+/*已有用户登录提示栏*/
+.account{
+	z-index: 10;
+	font-size: 1.4rem;
+	color: aqua;
+	margin: 0rem 2rem 0rem 14rem;
+	text-decoration: underline;
+    width: 10rem;
+}
+/*已有用户登录链接设置*/
+.panel a{
+	text-decoration: none;
+	list-style: none;
+}
+/*各输入栏验证提示*/
+._tips{
+	width: 30rem;
+	display: block;
+	float: left;
+	height: 2.5rem;
+	font-size: 1.4rem;
+	color: red;
+	margin-left: 4.5rem;
+	padding-left: 1rem;
+}
+
+
+
+
+
+

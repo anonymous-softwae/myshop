@@ -1,0 +1,142 @@
+@charset "UTF-8";
+html,body,div,ul,li,input,p,img{padding: 0;margin: 0;}
+html{font-size: 75%;}
+/* Body */
+body {
+	font-family: Georgia,Helvetica,Times New Roman, Cambria, Hoefler Text, Liberation Serif, Times,serif;
+	background-color: #FFFFFF;
+	font-size: 100%;
+}
+/* Container */
+.Container {
+	width: 95%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+	max-width: 1440px;
+	min-width: 1200px;
+}
+/**头部背景图**/
+.header_background{
+	width: 100%;
+	margin-top: 3.2rem;
+	text-align: center;	
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
+.header_background img{
+	width: 100%;
+	height: 15rem;
+	text-align: center;	
+}
+.header_background h2{
+	font-size: 3.5rem;
+	color:mistyrose;
+	position: absolute;
+	top: 5rem;
+}
+/**主内容**/
+.contact_content{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+    vertical-align: middle;
+	background: rgba(231,231,231,1.00);
+	padding: 3rem 0;
+}
+.jn{
+	display: flex;
+	flex-flow: column nowrap;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+}
+.jn_title{
+	width: 100%;
+	font-size: 1.8rem;
+	line-height: 2rem;
+	font-weight: 700;
+	display: block;
+	margin: 2rem auto;
+	text-align: center;
+}
+.jn_title img{
+	width: 2.5rem;
+	margin-right:1rem;
+	vertical-align: middle;
+}
+.jn ul{
+	width: 50%;
+	list-style: none;
+	display: block;
+	margin: 1rem auto;
+}
+.jn ul li{
+	line-height: 3rem;
+	font-size: 1.4rem;
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+}
+.jn iframe{
+	margin:2rem auto;
+	width:85%;
+	height:25rem;
+	border:#ccc solid 2px;
+}
+.qd{
+	display: flex;
+	flex-flow: column nowrap;
+	width: 50%;
+	justify-content: center;
+}
+.qd_title{
+	width: 100%;
+	font-size: 1.8rem;
+	line-height: 2rem;
+	font-weight: 700;
+	display: block;
+	margin:2rem auto;
+	text-align: center;
+}
+.qd_title img{
+	width: 2.5rem;
+	margin-right: 1rem;
+	vertical-align: middle;
+}
+.qd ul{
+	width: 60%;
+	list-style: none;
+	display: block;
+	margin: 1rem auto;
+}
+.qd ul li{
+	line-height: 3rem;
+	font-size: 1.4rem;
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+}
+.qd iframe{
+	margin:2rem auto;
+	width:85%;
+	height:25rem;
+	border:#ccc solid 2px;
+}
+/**地图**/
+.iw_poi_title {
+	color:#CC5522;
+	font-size:14px;
+	font-weight:bold;
+	overflow:hidden;
+	padding-right:13px;
+	white-space:nowrap;
+}
+	
+.iw_poi_content {
+	font:12px arial,sans-serif;
+	overflow:visible;
+	padding-top:4px;
+	white-space:-moz-pre-wrap;
+	word-wrap:break-word;
+}
+
+
